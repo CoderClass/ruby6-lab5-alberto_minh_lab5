@@ -10,3 +10,6 @@ App.messages = App.cable.subscriptions.create "MessagesChannel",
     $('.messages').prepend(data.message)
     console.log("client receives", data)
     # Called when there's incoming data on the websocket for this channel
+
+
+    
