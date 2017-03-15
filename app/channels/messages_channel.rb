@@ -10,6 +10,6 @@ class MessagesChannel < ApplicationCable::Channel
 
   def receive(data)
     Rails.logger.info("MessagesChannel got: #{data.inspect}")
-    ActionCable.server.broadcast("chat", data)  
+    ActionCable.server.broadcast("chat", data.message)  
   end
 end
